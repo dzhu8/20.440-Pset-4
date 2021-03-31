@@ -40,6 +40,10 @@ pip3 install leidenalg
 ```
 python src\\inCITE_analysis.py
 ```
+**NOTE**: there is a chance this error may result on running this command:
+OSError: Unable to open file (file signature not found)
+
+This means that the .h5ad file was corrupted on download (this can also be seen if the size of the downloaded file is much smaller than its actual size of ~1.5 GB). In this case, separately download `inCITE.h5ad` from `data` in this repository and manually move it from the Downloads folder to the location of the other downloaded files. After that, run the above command again. 
 
 This Python file will generate three figures, each of them UMAP representations of the scRNA-seq data: one is generated before pre-processing steps, one is generated after pre-processing but before batch correction, and the final is generated after batch correction. 
 

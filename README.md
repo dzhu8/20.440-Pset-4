@@ -35,7 +35,7 @@ pip3 install leidenalg
 
 3. Download everything in the repository. 
 
-4. Navigate to the location of the downloaded file in command prompt and run the Python file:
+4. Navigate to the location of the downloaded file in command prompt (make sure you have navigated to within the folder housing the data/figures/src folders) and run the Python file:
 
 ```
 python src\\inCITE_analysis.py
